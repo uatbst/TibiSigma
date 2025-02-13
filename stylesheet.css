@@ -1,0 +1,493 @@
+/* MENÜ KÉPEK */
+/* hozzá lehet adni minden főkategóriához 1-1 képet, ez jelenik meg a jobb alsó sarokban */
+.menukep_futokabel{   background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/MAGNUM%20Cable/MAGNUM%20Cable%20telep%C3%ADt%C3%A9s_3.jpg"); }
+.menukep_futoszonyeg { background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/F%C5%B1t%C5%91sz%C5%91nyeg/Magnum%20Mat%202.jpg"); }
+.menukep_hoszivattyu{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/Centrometal/h%C5%91szivatty%C3%BA/Mononyitva1.png");}
+.menukep_kazan{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/Thermex/E9%20elektromos%20kaz%C3%A1n/Thermex%20elektromos%20kaz%C3%A1n%20-%203.png");}
+.menukep_radiator{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/Deltacalor/Elektromos-radiator-kiskep.png");}
+.menukep_HMV_tartaly{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/ELDOM/indirekt%20hmv/fali/Thermo%2080%20web.jpg");}
+.menukep_termosztat{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/Falcon/termoszt%C3%A1t/Falcon-C16-lenyilo-kep.jpg");}
+.menukep_kedvezmeny{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/ckeditor/nagy-kedvezmennyel-ikon.png");}
+ .menukep_puffer_hmv_szett { background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/letoltesek/tartalyok/sunsystem_hmv_puffer_kategoria_kep.png");}
+.menukep_huto_futo{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/holtop/hovissza_vent.jpg");}
+.menukep_alkatreszek{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/alkatreszek/Centrometal%20f%C5%B1t%C5%91bet%C3%A9t%203x2000%20W%20-%20EL-Cm%20Compact.png");}
+.menukep_kiegeszitok{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/TermoJET/TERMOJET-TJ-6.png");}
+ .menukep_pufferek{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/letoltesek/tartalyok/sunsystem-pbm-web.jpg");} 
+.menukep_klima{ background-image: url("");}
+.menukep_akcio{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/akcios-termekek.jpg");}
+.menukep_black{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/e-futesbolt_KATEGORIA_FOTOK/BLACK_FRIDAY/black-friday-03_e-futes_lenyilo_web.png");}
+/* .menukep_vizmelegito{ background-image: url("https://www.e-futesbolt.hu/custom/efutes/image/data/akcios-termekek.jpg");}
+
+/* kategória menü feliratai lowercase */
+.category-list-link-text,
+.category-list-link, 
+.category-list-link .module-list-link::first-letter{
+  	text-transform: lowercase !important;
+}
+.category-list-link-text::first-letter,
+.category-list-link::first-letter, 
+.category-list-link .module-list-link::first-letter{
+  	text-transform: capitalize !important;
+}
+/* slider navigáció kilógás javítása */
+.nivo-controlNav{
+	bottom:5px;
+}
+/*Kategória cím méret*/
+.top h1 {
+	font-size: 1.6rem;
+	line-height: 2rem;
+}
+/*Baloldali szövegdobozok*/
+.column-right .section-module .module-head-title, .column-left .section-module .module-head-title, .column-left .information-module-list .module-head-title, .side-position.module .module-head-title {
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+}
+
+/* Feliratkozás modul */
+.column-content .module-head-title, .home-position .module-head-title, .side-position .module-head-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* fejléc szinei*/
+.col-search-input{
+	border: 1px solid rgba(217, 125, 13,0.2);
+	border-radius: 5px;
+}
+
+header .svg-header-heart, header .svg-header-login{
+    fill: #000;
+}
+header .svg-header-search{
+	fill:#fff;
+}
+.cart-module-button .module-head,
+.login-list li a{
+	color:#000;
+}
+
+/* alkategóriák kártyái */
+.subcategory-item-inner{
+	border:none;
+	background-color:#fff;
+}
+.subcategory-item-inner:hover{
+	border:1px solid rgba(100,100,100,1);
+}
+
+/* főmenü scroll elrejtése, ha gondot okoz vissza kell tenni */
+.header-bottom .module-category-wrapper #category-nav > ul{
+	overflow-y:hidden;
+}
+.children{
+	box-shadow: 0 2px 10px -2px rgba(0,0,0,.15);
+}
+/* FORMÁZOTT, BANNER FELETT MEGJELENŐ MENÜ */
+/* Ki kell szedni a subtree li paddingot, mert szétestik */
+.children .subTreeDropDown > li{
+	/*padding: 20px 30px;*/
+	padding:0 !important;
+}
+
+.detailed_menu_r{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width:820px;
+  height:500px;
+  background-color: #fff;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size:300px auto;	
+  padding:5px;
+  overflow:hidden;
+}
+/*.detailed_menu_r:nth-child(1) {
+  width: 100%;
+}*/
+.detailed_menu_r h3{
+  padding-left:10px;
+}
+.detailed_menu_r ul {
+  list-style: none;  
+  margin:10px 0 0 0;
+  padding: 0 0 0 5px;
+  width: 50%;
+}
+.detailed_menu_r li {
+  /*width: calc(860px - 110px/2);*/
+  height: 1.3em;
+  padding-left:0;
+  align-content: flex-start;  
+}
+.detailed_menu_r ul li a:link
+{
+  text-decoration:none;  
+}
+.detailed_menu_r ul li:first-child{
+  font-weight: bold;
+  text-transform:uppercase;
+}
+.detailed_menu_r ul li:nth-child(1) a:before{
+  display:none;
+}
+.detailed_menu_r ul li a:before{
+  box-sizing:border-box;
+  content: "▸ ";
+  font-family: "FontAwesome";
+  padding: 0 0 10px 0;
+  font-weight: 700;
+}
+.detailed_menu_r > ul > li:first-child > a,
+.detailed_menu_r > ul > li:first-child > a:link,
+.detailed_menu_r > ul > li:first-child > a:visited
+{
+  font-weight:bolder;
+  text-transform:none;
+  color:#7d7d7d;
+	font-size: 1.05em; /*lenyíló menü fő kategóriák betűmérete */
+}
+.detailed_menu_r > ul > li:first-child > a:hover{
+  color:#000000;
+}
+
+/* BAL PANEL - ÜGYFÉLSZOLGÁLAT  */
+#news3 > div > div.news-pretext{
+	text-align:center;
+}
+#news3 > div > div.card-deck.news-item{
+	display:none;
+}
+#news3 > div:nth-child(1){
+	padding:0;
+	margin:0;
+	background:none;
+}
+#customcontent13 > div:nth-child(1) > div:nth-child(1)
+{
+	padding:0px;
+}
+
+/* főoldali bannerek alsó és felső térköz*/
+#customcontent13,
+#customcontent15{
+	margin:0px;
+}
+
+.menukep_kazan > ul,
+.menukep_kedvezmeny > ul,
+.menukep_radiator > ul,
+.menukep_hoszivattyu > ul,
+.menukep_alkatreszek > ul{
+	width:100%;
+}
+
+/* menü ikon hack*/
+/*parent.category-list > .category-list-link::before*/
+/*.category-list-link-text::before{
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	font-family: "font-awesome";
+	color: #063857;
+	text-align: center;
+	margin-right: 10px;
+}*/
+/*.category-list-link-text:before:nth-child(1){ content: 'A';}
+.category-list-link-text:nth-child(2)::before{ content: 'B';}*/
+/*.category-list-link-text:nth-child(3)::before{ background-image: url(' https://via.placeholder.com/15/000000/FFFFFF/?text=1');}*/
+/*
+.item .category-list .module-list .parent{
+	font-weight:bold; 
+}*/
+
+/* Főoldal kis ikonok háttérszíne */
+#customcontent13 {
+    background-color: white;
+}
+
+/* Hírek modul cím betűméret */
+.article-title-link {
+    font-size: 0.8rem;
+}
+
+/* HÍREK modul betűméret formázása */
+.column-content .module-head-title, .home-position .module-head-title, .side-position .module-head-title {
+    font-size: 1.5rem;
+}
+
+/* főoldali ikon banner */
+.ikon-banner{
+  display:flex;
+  flex-direction: row;
+  background-color:#fff;
+  justify-content: spaced-between;
+  align-content: streched;  
+}
+.ikon-banner span img{ 
+  width:100%;
+}
+/* ügyfélszolgálati banner feleti tér törlése */
+#customcontent7{
+margin-top:0;
+}
+
+/* hírek (blog feletti/alatti tér csökkentése )*/
+#news > div.module-head{
+  padding: 10px 0;
+}
+
+/* fehér hátték termék leírásnál */ 
+#productdescription_wrapper{background-color:#fff;}
+
+/* Termékkép körvonal 
+.snapshot_vertical_product {
+    border-style: solid;
+	border-width: thin;
+	border-color: #d97d0d;
+} */
+
+/* Termékoldalon, termékkép körvonal
+ .product-image-img {
+    border-style: solid;
+	border-width: thin;
+    border-color: #d97d0d;
+}*/
+
+/* Termék oldalo na kép mindig maximum teljes széles lehet*/
+@media (max-width: 767.98px) {
+	.product-desc img, .product-desc iframe {
+		max-width: 100% !important;
+		height: auto !important;
+	}
+}
+
+
+/* Csatolt dokumentumok mérete */
+.attached-documents a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+/* Kategória betűtípus és betűméret */
+.category-list-link-text {
+    font-weight: normal;
+}
+
+/* felsorolás beállítása 
+ul {
+    line-height: 6px;
+}
+*/
+
+/* Mobil matrica megjelenés */
+@media screen and (max-width: 480px){
+.product_badges{
+display: unset !important;
+}
+}
+
+/* felsorolás javítása */
+.product_desc li:not(:nth-last-child(1)) {
+    padding-bottom: 0px;
+}
+
+.product_desc > ul > li > p{
+  padding-bottom: 8px;
+	margin-bottom: 0;
+}
+
+
+
+/* oldal háttérszíne */
+.page-body {
+    background-color: #ffffff;
+}
+
+/* lábléc háttérszíne */
+footer .footer-top-2-position {
+    background-color: #ffffff;
+}
+
+/* oldal alsó szekció elválasztó csík */
+.home-bottom-section {
+    background: #ffffff;
+}
+
+/* Új matrica szerkesztése 
+.badgeitem-text {
+    font-size: 16px;
+    text-shadow: 2px 1px 1px #211f1d;
+}
+
+/* Hűtő/Fűtő ventillátor kategória módosítása  
+#cat_426 > a > div.category-list-link-text {
+	/* text-shadow: 0 0 1px #FF0000; 
+	color: red;
+	animation: color-change 2s infinite;
+} */
+
+@keyframes color-change {
+    0% {
+        color: black;
+		text-shadow: 0 0 1px black;
+	}
+
+    40% {
+        color: white;
+		text-shadow: 0 0 1px white;
+    }
+	
+	60% {
+        color: white;
+		text-shadow: 0 0 1px white;
+    }
+
+    100% {
+        color: black;
+		text-shadow: 0 0 1px black;
+    }
+}
+
+/* KATEGÓRIÁK árnyékolás */
+#category-nav > ul {
+    box-shadow: -12px 10px 30px 0 rgba(0,0,0,0.05);
+}
+
+/* Alkategóriák felirat */
+@media (max-width: 991.98px){
+.category-page-middle-section button.subcategory-title {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-weight: bold;
+}
+}
+
+/* Akciós idő félkövér */
+.sale_countdown_label {
+    font-weight: bold;
+}
+
+/* KATEGÓRIÁK betűk szerkesztése */
+div.category-list-link-text {
+	font-weight: bold;
+}
+
+
+/* Black Friday kategória felirat szerkesztése */
+#cat_716 > a > div.category-list-link-text {
+	color: black;
+	font-size: 1rem;
+	text-transform: uppercase !important;
+	animation: color-change 1.5s infinite;
+}
+
+/* Black Friday kategória háttér szerkesztése */
+li#cat_716.item.category-list.module-list.even
+{
+	/*background-color: #d97d0d;*/
+	background: linear-gradient(180deg, rgba(40,252,235,1) 0%, rgba(33,135,237,1) 100%);
+}
+
+/* Kiárúsítás kategória felirat szerkesztése */
+#cat_743 > a > div.category-list-link-text {
+	color: black;
+	font-size: 1rem;
+	text-transform: uppercase !important;
+	animation: color-change 1.5s infinite;
+}
+
+/* Kiárúsítás kategória háttér szerkesztése */
+li#cat_743.item.category-list.module-list.even
+{
+	/*background-color: #d97d0d;*/
+	background: linear-gradient(180deg, rgba(40,252,235,1) 0%, rgba(33,135,237,1) 100%);
+}
+
+/* akciós kategória felirat szerkesztése */
+#cat_199 > a > div.category-list-link-text {
+	color: black;
+	font-size: 1rem;
+	text-transform: uppercase !important;
+	animation: color-change 1.5s infinite;
+}
+
+/* akciós kategória háttér szerkesztése */
+li#cat_199.item.category-list.module-list.even
+{
+	/*background-color: #d97d0d;*/
+	background: linear-gradient(180deg, rgba(217,77,26,1) 0%, rgba(217,125,13,1) 100%);
+}
+
+
+/* Kalkulátor felirat szerkesztése */
+header .header-bottom .headermenu-list.navbar-nav li a[href$='/kalkulator'] {
+	color: red;
+	font-weight: bold;
+}
+.news-card-title {
+	font-size: 1.25rem;
+}
+
+
+/* Főoldali banner alatti kisikonok térköz javítás */
+.kisikonok{
+	padding-left: unset;
+	padding-right: unset;
+}
+/*Kínálatunk( kategória menü) megjelenítés */
+.vertical-category-menu header .category-menu>li {
+	max-height: unset;
+}
+
+.category-card.card .category-card-link,
+.category-card.card .category-snapshot-name-link {
+	word-break: initial;
+}
+
+
+@media (max-width: 767.98px) {
+	.subcategory-list:not(.all-manufacturer-list) {
+		flex-wrap: wrap;
+		margin-right: -10px;
+	}
+	.subcategory-list:not(.all-manufacturer-list) .subcategory-item {
+		flex-basis: calc(50% - 10px);
+	}
+}
+
+#category-nav .nav-item .nav-link {
+	font-size: 0.825rem;
+	line-height: 1.2;
+}
+
+
+#news,
+#manufactureroffer {
+	margin-bottom: 4rem;
+}
+
+.news-all-button a,
+.all-manufacturer-btn {
+	color: #2f3132;
+	border: 1px solid #e4e4ea;
+	width: 100%;
+	white-space: nowrap;
+    padding: .75rem;
+    text-align: right;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.news-all-button a:hover,
+	.all-manufacturer-btn:hover {
+		color: var(--global-color);
+	}
+}
+
+@media (max-width: 992px) {
+	.news-all-button {
+		margin-top: -30px;
+	}
+}
