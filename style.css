@@ -1,0 +1,191 @@
+/* Általános stílusok */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00bcd4, #ff5722);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    position: relative;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+header nav ul li:hover .dropdown {
+    display: block;
+}
+
+header nav ul li .dropdown li {
+    padding: 10px;
+}
+
+header nav ul li .dropdown li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li .dropdown li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Kategória fülek */
+.categories {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 5%;
+    animation: fadeIn 2s;
+}
+
+.category-tab {
+    width: 30%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category-tab:hover {
+    transform: scale(1.05);
+}
+
+.category-tab h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.category-tab p {
+    font-size: 1rem;
+}
+
+/* Akciós termékek */
+.sale-products {
+    text-align: center;
+    margin: 3rem 5%;
+}
+
+.sale-products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-card {
+    display: inline-block;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 1rem 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.sale-products .product-card h3, .sale-products .product-card .price {
+    color: #ff5722;
+}
+
+/* Szűrők */
+.filters {
+    margin: 3rem 5%;
+}
+
+.filters input[type="range"] {
+    width: 100%;
+}
+
+/* Animációk */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Mobil optimalizálás */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category-tab {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
