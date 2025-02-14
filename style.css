@@ -68,15 +68,18 @@ header nav ul li .dropdown li a:hover {
 }
 
 /* Kategória fülek */
+/* Kategória fülek - alap beállítások */
 .categories {
     display: flex;
     justify-content: space-between;
     margin: 2rem 5%;
-    animation: fadeIn 2s;
+    gap: 20px; /* Kategória elemek közötti távolság */
 }
 
+/* Egyes kategória elemek */
 .category-tab {
-    width: 30%;
+    flex: 1;
+    min-height: 200px; /* Magasság beállítása */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -84,12 +87,17 @@ header nav ul li .dropdown li a:hover {
     color: white;
     text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/* Hover hatás asztali nézetben */
 .category-tab:hover {
     transform: scale(1.05);
 }
 
+/* Szöveg a kategória fülön */
 .category-tab h3 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -98,6 +106,29 @@ header nav ul li .dropdown li a:hover {
 .category-tab p {
     font-size: 1rem;
 }
+
+/* 🔹 Mobil optimalizálás 🔹 */
+@media (max-width: 768px) {
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-tab {
+        width: 100%; /* Teljes szélesség */
+        min-height: 150px; /* Kisebb magasság */
+        padding: 1.5rem;
+    }
+
+    .category-tab h3 {
+        font-size: 1.3rem;
+    }
+
+    .category-tab p {
+        font-size: 0.9rem;
+    }
+}
+
 
 /* Akciós termékek */
 .sale-products {
