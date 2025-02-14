@@ -69,17 +69,19 @@ header nav ul li .dropdown li a:hover {
 
 /* Kategória fülek */
 /* Kategória fülek - alap beállítások */
+/* Kategória fülek - alap beállítások */
 .categories {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Több sorba törés mobilon */
+    justify-content: center;
     margin: 2rem 5%;
-    gap: 20px; /* Kategória elemek közötti távolság */
+    gap: 15px; /* Kisebb távolság mobilra */
 }
 
 /* Egyes kategória elemek */
 .category-tab {
-    flex: 1;
-    min-height: 200px; /* Magasság beállítása */
+    flex: 1 1 calc(33.333% - 30px); /* 3 oszlop asztali nézetben */
+    min-height: 200px;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -90,6 +92,7 @@ header nav ul li .dropdown li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Hover hatás asztali nézetben */
@@ -101,23 +104,25 @@ header nav ul li .dropdown li a:hover {
 .category-tab h3 {
     font-size: 1.5rem;
     font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .category-tab p {
     font-size: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* 🔹 Mobil optimalizálás 🔹 */
+/* 📱 **Mobil optimalizálás (max-width: 768px)** 📱 */
 @media (max-width: 768px) {
     .categories {
         flex-direction: column;
-        align-items: center;
+        gap: 10px; /* Kisebb távolság mobilon */
     }
 
     .category-tab {
-        width: 100%; /* Teljes szélesség */
-        min-height: 150px; /* Kisebb magasság */
-        padding: 1.5rem;
+        flex: 1 1 100%; /* Teljes szélesség */
+        min-height: 150px;
+        padding: 1rem;
     }
 
     .category-tab h3 {
@@ -125,9 +130,7 @@ header nav ul li .dropdown li a:hover {
     }
 
     .category-tab p {
-        font-size: 0.9rem;
-    }
-}
+        font-size: 1rem;
 
 
 /* Akciós termékek */
