@@ -12,73 +12,44 @@ body {
     animation: gradientAnimation 15s ease infinite;
 }
 
+/* 🌟 NAVIGÁCIÓ */
 header {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1rem 0;
+    text-align: center;
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
-    position: relative;
-    margin: 0 20px;
+    margin: 10px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
-header nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-}
-
-header nav ul li .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    border-radius: 5px;
-}
-
-header nav ul li:hover .dropdown {
-    display: block;
-}
-
-header nav ul li .dropdown li {
-    padding: 10px;
-}
-
-header nav ul li .dropdown li a {
-    color: white;
-    text-decoration: none;
-}
-
-header nav ul li .dropdown li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Kategória fülek - alap beállítások */
+/* 📌 KATEGÓRIA FÜLEK */
 .categories {
     display: flex;
-    flex-wrap: wrap; /* Több sorba törés mobilon */
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
     margin: 2rem 5%;
-    gap: 15px; /* Kisebb távolság mobilra */
 }
 
-/* Egyes kategória elemek */
+/* Asztali nézet */
 .category-tab {
-    flex: 1 1 calc(33.333% - 30px); /* 3 oszlop asztali nézetben */
+    flex: 1 1 calc(33.333% - 30px);
     min-height: 200px;
     background-size: cover;
     background-position: center;
@@ -86,19 +57,17 @@ header nav ul li .dropdown li a:hover {
     padding: 2rem;
     color: white;
     text-align: center;
-    transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 
-/* Hover hatás asztali nézetben */
 .category-tab:hover {
     transform: scale(1.05);
 }
 
-/* Szöveg a kategória fülön */
 .category-tab h3 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -110,30 +79,7 @@ header nav ul li .dropdown li a:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* 📱 **Mobil optimalizálás (max-width: 768px)** 📱 */
-@media (max-width: 768px) {
-    .categories {
-        flex-direction: column;
-        gap: 10px; /* Kisebb távolság mobilon */
-    }
-
-    .category-tab {
-        flex: 1 1 100%; /* Teljes szélesség */
-        min-height: 150px;
-        padding: 1rem;
-    }
-
-    .category-tab h3 {
-        font-size: 1.3rem;
-    }
-
-    .category-tab p {
-        font-size: 1rem;
-    }
-}
-
-
-/* Akciós termékek */
+/* 🛒 AKCIÓS TERMÉKEK */
 .sale-products {
     text-align: center;
     margin: 3rem 5%;
@@ -168,94 +114,50 @@ header nav ul li .dropdown li a:hover {
     margin: 1rem 0;
 }
 
-.price {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.old-price {
-    text-decoration: line-through;
-    color: #888;
-}
-
-.sale-products .product-card h3, .sale-products .product-card .price {
-    color: #ff5722;
-}
-
-/* Szűrők */
+/* 🔍 SZŰRŐK */
 .filters {
-    background-color: #fff; /* Fehér háttér */
-    border-radius: 8px; /* Lekerekített sarkok */
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 350px; /* Maximális szélesség */
-    margin: 2rem auto; /* Középre igazítás */
-}
-
-.filters h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    margin: 3rem 5%;
     text-align: center;
 }
 
 .filters input[type="range"] {
-    width: 100%;
-    margin-bottom: 1rem;
+    width: 80%;
 }
 
-.apply-filter-btn {
-    background-color: #00bcd4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%; /* A gomb legyen széles */
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.apply-filter-btn:hover {
-    background-color: #0097a7;
-}
-
-/* Animációk */
+/* 🎨 ANIMÁCIÓK */
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Mobil optimalizálás */
+/* 📱 MOBIL OPTIMALIZÁLÁS */
 @media (max-width: 768px) {
+    /* Menü mobilon */
     header nav ul {
         flex-direction: column;
+        text-align: center;
     }
 
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Kategóriafülek mobilon */
     .categories {
         flex-direction: column;
+        align-items: center;
     }
 
     .category-tab {
         width: 100%;
-        margin-bottom: 20px;
+        min-height: 150px;
+        margin-bottom: 10px;
     }
 
+    /* Termékkártyák mobilon */
     .product-card {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .filters {
         width: 90%;
-        margin: 20px auto;
+        margin: 10px auto;
     }
 }
