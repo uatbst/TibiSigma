@@ -75,12 +75,18 @@
         </div>
     </section>
 
-    <!-- Szűrők -->
-    <section class="filters">
-        <h3>Szűrők</h3>
+ <!-- Szűrők -->
+<section class="filters">
+    <h3>Szűrők</h3>
+    <form class="filter-form">
         <label for="price-range">Ár:</label>
         <input type="range" id="price-range" name="price-range" min="1000" max="100000" step="1000">
-    </section>
+        <div class="filter-options">
+            <button type="submit" class="apply-filter-btn">Alkalmaz</button>
+        </div>
+    </form>
+</section>
+
 
     <footer>
         <p>© 2025 Thermirális Kft. Minden jog fenntartva.</p>
